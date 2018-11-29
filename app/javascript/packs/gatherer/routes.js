@@ -5,11 +5,14 @@ import {
 } from 'react-router-dom'
 
 import LandingPage from './components/landingPage';
+import Dashboard from './containers/dashboard';
+
 
 const App = (props) => (
   <Router>
     <div>
       <Route exact path='/' component={LandingPage} />
+      <Route path="/dashboard" component={Dashboard}/>
     </div>
   </Router>
 )
